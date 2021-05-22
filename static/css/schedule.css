@@ -1,0 +1,48 @@
+main {
+    margin: 1%;
+    padding: 1%;
+}
+
+h4 {
+    text-decoration: underline;
+}
+
+table {
+    background-color: cornsilk;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th {
+    border: 1px solid var(--illini-orange);
+    margin: 0.5rem;
+    padding: 0.5rem;
+    word-wrap: break-word;
+}
+
+button {
+    background-color: orange;
+    padding: .25em;
+}
+
+.menu {
+    background-color: var(--illini-blue);
+    border: 1px solid var(--illini-orange);
+    padding: .25em;
+}
+
+#schedule {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1%;
+    list-style: none;
+}
+
+.semester {
+    background-color: var(--illini-blue);
+    border: 1px solid var(--illini-orange);
+    margin: 1%;
+    padding: 1%;
+}

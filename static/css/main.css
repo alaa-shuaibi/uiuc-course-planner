@@ -1,0 +1,47 @@
+body {
+    background-color: slategray;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1 {
+    background-color: darkblue;
+    font-family: cursive;
+    font-weight: 500;
+    margin: 0;
+    padding: 2.5% 0;
+}
+
+nav {
+    background-color: blue;
+    font-family: cursive;
+    padding: .5em;
+}
+
+nav > ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1 a {
+    color: darkorange;
+    text-decoration: none;
+}
+
+nav a {
+    color: orange;
+    text-decoration: none;
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+:root {
+    --illini-orange: hsl(11, 100%, 50%);
+    --illini-blue: hsl(216, 100%, 50%);
+}
