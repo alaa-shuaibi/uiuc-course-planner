@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}UIUC Course Planner{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}"/>
+    {% block head %}
+    {% endblock %}
+</head>
+
+<body>
+    <header>
+        <h1><a href="{{ url_for('index') }}">UIUC Course Planner</a></h1>
+        <nav>
+            <ul class="navlist">
+                <li><a href="#">Articles</a></li>
+                <li><a href="{{ url_for('schedule') }}">Schedule</a></li>
+                <li><a href="#">Saved Courses</a></li>
+                <li><a href="#">Analytics</a></li>
+            </ul>
+        </nav>
+        <div class="settings">Settings</div>
+    </header>
+
+    <main>
+        {% block main %}
+        {% endblock %}
+    </main>
+
+    <footer>
+    </footer>
+
+    {% block script %}
+    {% endblock %}
+</body>
+</html>

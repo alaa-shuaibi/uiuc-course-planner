@@ -1,37 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schedule</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/schedule.css') }}"/>
-</head>
+{% extends "base.html" %}
+{% block title %}Schedule{% endblock %}
 
-<body>
-    <header>
-        <h1><a href="{{ url_for('index') }}">UIUC Course Planner</a></h1>
-        <nav>
-            <ul class="navlist">
-                <li><a href="#">Articles</a></li>
-                <li><a href="{{ url_for('schedule') }}">Schedule</a></li>
-                <li><a href="#">Saved Courses</a></li>
-                <li><a href="#">Analytics</a></li>
-            </ul>
-        </nav>
-    </header>
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/schedule.css') }}"/>
+{% endblock %}
 
-    <main>
-        <div class="menu">
-            <h4>Menu</h4>
-            <button onclick="addSemester()">Add Semester</button>
-            <button onclick="removeSemester()">Remove Semester</button>
-        </div>
+{% block main %}
+<div class="menu">
+    <h4>Menu</h4>
+    <button onclick="addSemester()">Add Semester</button>
+    <button onclick="removeSemester()">Remove Semester</button>
+</div>
 
-        <ol id="schedule"></ol>
-    </main>
+<ol id="schedule"></ol>
+{% endblock %}
 
-    <script src="{{ url_for('static', filename='js/schedule.js') }}" charset="utf-8"></script>
-</body>
-</html>
+{% block script %}
+<script src="{{ url_for('static', filename='js/schedule.js') }}" charset="utf-8"></script>
+{% endblock %}
