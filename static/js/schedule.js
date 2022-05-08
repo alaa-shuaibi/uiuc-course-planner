@@ -25,18 +25,18 @@ function addSemester() {
     let th1 = document.createElement("th");
     let th2 = document.createElement("th");
     let th3 = document.createElement("th");
-    let th4 = document.createElement("th");
+    // let th4 = document.createElement("th");
     
     tbody.id = "table" + semesterCount.toString();
     th1.innerHTML = "Name";
     th2.innerHTML = "Label";
     th3.innerHTML = "Credit Hours";
-    th4.innerHTML = "Schedule Information";
+    // th4.innerHTML = "Schedule Information";
     
     headRow.appendChild(th1);
     headRow.appendChild(th2);
     headRow.appendChild(th3);
-    headRow.appendChild(th4);
+    // headRow.appendChild(th4);
     table.appendChild(thead);
     table.appendChild(tbody);
     li.appendChild(table);
@@ -91,17 +91,19 @@ function addCourse(name, tableID) {
         let cell1 = row.insertCell(0);
         let cell2 = row.insertCell(1);
         let cell3 = row.insertCell(2);
-        let cell4 = row.insertCell(3);
+        // let cell4 = row.insertCell(3);
         
         cell1.innerHTML = course['name'];
         cell2.innerHTML = course['label'];
         cell3.innerHTML = course['hours'];
 
+        /*
         if (course['schedule_info'] != null) {
-            cell4.innerHTML = course['schedule_info'];
+           cell4.innerHTML = course['schedule_info'];
         } else {
             cell4.innerHTML = "None";
         }
+        */
     };
 
     request.send();

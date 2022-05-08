@@ -5,6 +5,7 @@ main {
 
 h4 {
     text-decoration: underline;
+    color: darkorange;
 }
 
 table {
@@ -16,20 +17,20 @@ table {
 }
 
 td, th {
-    border: 1px solid var(--illini-orange);
+    border: 1px solid darkorange;
     margin: 0.5rem;
     padding: 0.5rem;
     word-wrap: break-word;
 }
 
 button {
-    background-color: orange;
+    background-color: darkorange;
     padding: .25em;
 }
 
 .menu {
-    background-color: var(--illini-blue);
-    border: 1px solid var(--illini-orange);
+    background-color: darkblue;
+    border: 1px solid darkorange;
     padding: .25em;
 }
 
@@ -41,8 +42,8 @@ button {
 }
 
 .semester {
-    background-color: var(--illini-blue);
-    border: 1px solid var(--illini-orange);
+    background-color: darkblue;
+    border: 1px solid darkorange;
     margin: 1%;
     padding: 1%;
 }
